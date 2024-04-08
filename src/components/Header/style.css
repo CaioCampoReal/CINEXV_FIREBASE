@@ -1,0 +1,38 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(4, 42, 126, 0.8);
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 34px;
+    z-index: 1000; 
+    
+}
+
+a{
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 25px;
+    
+}
+
+.login-button {
+    
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    
+    cursor: pointer;
+  }
+  
+  /* Media query para telas menores que 768px */
+  @media (max-width: 768px) {
+    .login-button {
+      padding: 0.4rem 0.8rem; /* Reduz o padding do botão em telas menores */
+      font-size: 0.9rem; /* Reduz o tamanho da fonte do botão em telas menores */
+    }
+  }

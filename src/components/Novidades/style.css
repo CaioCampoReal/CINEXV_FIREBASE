@@ -1,0 +1,10 @@
+.novidade{
+    padding: 30px;
+    text-align: center;
+    color: white
+   
+}
+.card-body h5,
+.card-body p {
+    color: black; 
+}

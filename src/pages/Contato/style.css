@@ -1,0 +1,11 @@
+
+  
+  .map-container {
+    position: absolute; /* Define a posição absoluta para o container do mapa */
+    top: 50%; /* Posiciona o topo do mapa a 50% da altura da janela */
+    left: 50%; /* Posiciona a esquerda do mapa a 50% da largura da janela */
+    transform: translate(-50%, -50%); /* Move o mapa de volta metade de sua largura e metade de sua altura, para centralizá-lo */
+    width: 80%; /* Define a largura desejada para o mapa */
+    max-width: 800px; /* Define uma largura máxima para o mapa para evitar que ele fique muito largo */
+    height: 400px; /* Define a altura desejada para o mapa */
+  }
