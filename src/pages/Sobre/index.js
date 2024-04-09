@@ -13,10 +13,7 @@ function Sobre() {
           <br />
           Nossa trajetória com a experiência acumulada aliada à incessante busca por inovação, reflete na satisfação proporcionada aos nossos clientes do início ao fim do entretenimento, que experimenta um serviço diferenciado e de qualidade.
         </p>
-        
-        <div style={{ paddingTop:  '10px',  paddingBottom:  '20px'}}>
-            <button className='compre-btn' >Compre Ingressos Aqui!</button>
-        </div>
+
         <div className="redes">
           <a href="a"><i className="fab fa-facebook"></i></a>
           <a href="a"><i className="fab fa-twitter"></i></a>

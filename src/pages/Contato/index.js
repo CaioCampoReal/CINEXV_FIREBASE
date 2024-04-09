@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { auth, googleAuthProvider } from '../../firebase';
+import { db, auth, googleAuthProvider } from '../../firebaseConnection';
 import { signInWithPopup, signOut } from 'firebase/auth';
 import './style.css'; // Importe o CSS aqui
 import MapContainer from '../../components/mapas';

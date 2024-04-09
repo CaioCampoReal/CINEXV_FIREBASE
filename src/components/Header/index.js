@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { auth, googleAuthProvider } from '../../firebase'; 
+import { auth, googleAuthProvider } from '../../firebaseConnection'; 
 import { signInWithPopup, signOut } from 'firebase/auth';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
@@ -56,7 +56,7 @@ function Header() {
           ) : (
             // Se o usuário não estiver autenticado, exibir o botão "Login com Google"
             <button className="login-button" onClick={handleLogin}>
-              Login com Google
+              Login
             </button>
           )}
         </div>

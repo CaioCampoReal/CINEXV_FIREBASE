@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './style.css';
 import './script.js';
 import velozes from '../assets/velozes em fullhd.jpg';
-import tubarao from '../assets/mega fullhd.jpg';
+import tubarao from '../assets/Megatubarão.jpg';
 import mario from '../assets/mario-cinema.jpeg';
 import spiderman from '../assets/homem aranha fullhd.webp';
 
