@@ -3,44 +3,93 @@ import { Link } from 'react-router-dom';
 import './style.css';
 import logo from '../assets/logo.png';
 
+// Links da seção "Company"
+const companyLinks = [
+    { text: 'Sobre', href: '#' },
+    { text: 'Empregos', href: '#' },
+    { text: 'Imprensa', href: '#' },
+    { text: 'Novidades', href: '#' }
+];
+
+// Links da seção "Comunidades"
+const communityLinks = [
+    { text: 'Filmes', href: '#' },
+    { text: 'Catálogos', href: '#' },
+    { text: 'Estreias', href: '#' }
+];
+
+// Links da seção "Links úteis"
+const usefulLinks = [
+    { text: 'Ajuda', href: '#' },
+    { text: 'Fidelidade', href: '#' },
+    { text: 'Player', href: '#' }
+];
+
+// Links das redes sociais (exemplos com imagens vazias)
+const socialMediaLinks = [
+    { imgSrc: '', alt: '' },
+    { imgSrc: '', alt: '' },
+    { imgSrc: '', alt: '' }
+];
+
 function Footer() {
     return (
         <footer>
             <div className="container">
                 <div className="row">
+                    {/* Seção da logo */}
                     <div className="col-md-2">
-                        <Link to="#" className="logo"><img src={logo} alt="Logo"></img></Link>
+                        <Link to="#" className="logo">
+                            <img src={logo} alt="Logo" />
+                        </Link>
                     </div>
+
+                    {/* Seção "Company" */}
                     <div className="col-md-2">
                         <h4>Company</h4>
                         <ul className="navbar-nav">
-                            <li><a href="">Sobre</a></li>
-                            <li><a href="">Empregos</a></li>
-                            <li><a href="">Imprensa</a></li>
-                            <li><a href="">Novidades</a></li>
+                            {companyLinks.map(link => (
+                                <li key={link.text}>
+                                    <a href={link.href}>{link.text}</a>
+                                </li>
+                            ))}
                         </ul>
                     </div>
+
+                    {/* Seção "Comunidades" */}
                     <div className="col-md-2">
                         <h4>Comunidades</h4>
                         <ul className="navbar-nav">
-                            <li><a href="">Filmes</a></li>
-                            <li><a href="">Catálogos</a></li>
-                            <li><a href="">Estreias</a></li>
+                            {communityLinks.map(link => (
+                                <li key={link.text}>
+                                    <a href={link.href}>{link.text}</a>
+                                </li>
+                            ))}
                         </ul>
                     </div>
+
+                    {/* Seção "Links úteis" */}
                     <div className="col-md-2">
                         <h4>Links úteis</h4>
                         <ul className="navbar-nav">
-                            <li><a href="">Ajuda</a></li>
-                            <li><a href="">Fidelidade</a></li>
-                            <li><a href="">Player</a></li>
+                            {usefulLinks.map(link => (
+                                <li key={link.text}>
+                                    <a href={link.href}>{link.text}</a>
+                                </li>
+                            ))}
                         </ul>
                     </div>
+
+                    {/* Seção de links das redes sociais */}
                     <div className="col-md-4">
-                        <ul>
-                            <li><a href=""><img src="" alt="" /></a></li>
-                            <li><a href=""><img src="" alt="" /></a></li>
-                            <li><a href=""><img src="" alt="" /></a></li>
+                        <ul className="navbar-nav">
+                            {socialMediaLinks.map((link, index) => (
+                                <li key={index}>
+                                    <a href="#">
+                                        <img src={link.imgSrc} alt={link.alt} />
+                                    </a>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>
